@@ -1,0 +1,550 @@
+/* ------ALL TAGS SELECTED------- */
+* {
+  margin:0;  padding:0;   font-family:'Poppins',sans-serif;
+}
+/* ------BODY SELECTED------------- */
+body { 
+  font-family:'Poppins',sans-serif;
+}
+/*----- HEADER BACKGROUND----------- */
+.header { 
+  padding-top:43px;
+  min-height:100vh;
+  width:100%;
+  background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/src/assets/img/banner.jpg);
+  background-size:cover;
+  background-position:center;
+  position:relative;
+  padding-bottom:30px;
+}
+/* ------NAV BAR------------ */
+.navbar {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  padding:3% 6%;
+  z-index:2;
+}
+.nav_bar_when_scroll {
+  background:linear-gradient(to right,#161616fb,#333333f6);
+  top:0%;
+  padding:2% 6%;
+}
+.custom {
+  position:absolute;
+  top:-75px;
+  margin-top:70px;
+}
+.nav-links {
+  flex:1;
+  text-align:right;
+}
+.nav-links ul li {
+  display:inline-block;
+  list-style:none;
+  padding:8px 12px;
+  position:relative;
+}
+.nav-links ul li a {
+  color:#fff;
+  text-decoration:none;
+  font-size:13px;
+}
+.nav-links ul li::after {
+  content:'';
+  width:0%;
+  background:#f44336;
+  height:2px;
+  display:block;
+  margin:auto;
+  transition:0.6s;
+}
+.nav-links ul li:hover::after {
+  width:100%;
+}
+/*------- HEADER TEXT---------  */
+
+.text-box {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  color:#fff;
+  text-align:center;
+  margin-top:215px;
+}
+.text-box h1 {
+  font-size:62px;
+  animation:writeh1 4s steps(40) infinite;
+  overflow:hidden;
+  white-space:nowrap;
+  margin:0;
+}
+@keyframes writeh1 {
+  from {
+  width:0%;
+}
+to {
+  width:100%;
+}
+}.text-box p {
+  margin:10px 0 40px;
+}
+/*---- TEXT BOX ------------  */
+.hero-butn {
+  color:#fff;
+  border:1px solid #fff;
+  background:transparent;
+  text-decoration:none;
+  font-size:13px;
+  padding:12px 34px;
+  position:relative;
+  display:inline-block;
+  cursor:pointer;
+}
+.hero-butn:hover {
+  border:1px solid #f44336;
+  background-color:#f44336;
+  transition:1s;
+}
+nav .fa {
+  display:none;
+}
+/* ---------ABOUT SECTION 1 (COURSE)----------  */
+.course {
+  margin:auto;
+  padding-top:100px;
+  width:80%;
+  text-align:center;
+}
+.course h1 {
+  font-size:36px;
+  font-weight:600;
+  animation:writeh1 4s steps(40) infinite;
+  overflow:hidden;
+  white-space:nowrap;
+  margin:0;
+  display:inline-block;
+}
+.course p {
+  font-size:14px;
+  color:#777;
+  font-weight:300;
+  line-height:22px;
+  padding:10px;
+}
+.row {
+  display:flex;
+  justify-content:space-between;
+  margin-top:5%;
+}
+.course-col {
+  flex-basis:31%;
+  background:#fff3f3;
+  border-radius:10px;
+  margin-bottom:5%;
+  padding:20px 12px;
+  box-sizing:border-box;
+  transition-duration:.5s;
+}
+.course-col:hover {
+  box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+}
+.course-col h3 {
+  text-align:center;
+  font-weight:600;
+  margin:10px;
+}
+/* ---------ABOUT SECTION 2 (CAMPUS)--------------  */
+.campus {
+  margin:auto;
+  width:80%;
+  text-align:center;
+  padding-top:50px;
+}
+.campus-col {
+  flex-basis:32%;
+  border-radius:10px;
+  margin-bottom:30px;
+  position:relative;
+  overflow:hidden;
+}
+.campus-col img {
+  width:100%;
+  display:block;
+}
+.layer {
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  position:absolute;
+  background:transparent;
+  transition:.5s;
+}
+.layer:hover {
+  background:rgba(256,0,0,0.7);
+}
+.layer h3 {
+  width:100%;
+  font-weight:500;
+  color:#fff;
+  font-size:26px;
+  bottom:0;
+  position:absolute;
+  top:90%;
+  opacity:0;
+  transition:1s;
+}
+.layer:hover h3 {
+  opacity:1;
+  top:50%;
+}
+/* ---ABOUT SECTION 3 (FACILITIES)------ */
+.facilities {
+  margin:auto;
+  width:80%;
+  text-align:center;
+  padding-top:50px;
+}
+.facilities-col {
+  flex-basis:31%;
+  border-radius:10px;
+  margin-bottom:5%;
+  text-align:left;
+}
+.facilities-col img {
+  border-radius:10px;
+  width:100%;
+  transition:transform ease 1s;
+}
+.facilities-col img:hover {
+  transform:scale(1.1);
+}
+.facilities-col p {
+  padding:0;
+}
+.facilities-col h3 {
+  margin:16px 0;
+  text-align:left;
+}
+/* --ABOUT SECTION 4 (ABOUT STUDENT REVIEWS)--  */
+.reviews {
+  margin:auto;
+  width:80%;
+  text-align:center;
+  padding-top:100px;
+}
+.reviews-col {
+  flex-basis:44%;
+  border-radius:10px;
+  margin-bottom:5%;
+  text-align:left;
+  background:#fff3f3;
+  padding:25px;
+  cursor:pointer;
+  display:flex;
+}
+.reviews-col img {
+  height:40px;
+  margin-left:5px;
+  margin-right:30px;
+  border-radius:50%;
+}
+.reviews-col p {
+  padding:0;
+}
+.reviews-col h3 {
+  text-align:left;
+  padding-top:15px;
+}
+.reviews-col i {
+  color:#f44336;
+}
+/*---ABOUT SECTION 5 (CALL TO ACTION)------*/
+.cta {
+  margin:100px auto;
+  width:80%;
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/src/assets/img/banner2.jpg);
+  background-position:center;
+  background-size:cover;
+  border-radius:10px;
+  text-align:center;
+  padding:100px 0;
+}
+.cta h1 {
+  color:#fff;
+  margin-bottom:40px;
+  padding:0;
+}
+footer {
+  width:100%;
+  text-align:center;
+  padding:30px 0;
+}
+.footer h4 {
+  margin-top:25px;
+  margin-bottom:20px;
+  font-weight:600;
+}
+.icons .fa {
+  color:#f44336;
+  margin:0 13px;
+  cursor:pointer;
+  padding:18px 0;
+}
+.copyright {
+  font-size:large;
+}
+/*==////===ABOUT.HTML PAGE==////==*/
+
+.sub-header {
+  padding-top:43px;
+  background:#000;
+  height:60vh;
+  width:100%;
+  background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/src/assets/img/background.jpg);
+  background-position:center;
+  background-size:cover;
+  text-align:center;
+  color:#fff;
+}
+.sub-header h1 {
+  margin-top:100px;
+}
+.about-us {
+  width:80%;
+  padding-top:80px;
+  margin:auto;
+  padding-bottom:50px;
+}
+.about-col {
+  flex-basis:48%;
+  padding:30px 2px;
+}
+.about-col img {
+  width:100%;
+}
+.about-col h1 {
+  padding-top:0;
+}
+.about-col h1 {
+  padding:15px 0 25px;
+}
+.red-butn {
+  margin-top:20px;
+  border:1px solid #f44336;
+  color:#f44336;
+  border-radius:8px;
+}
+.red-butn:hover {
+  color:#fff;
+}
+/*===///==BLOG.HTML PAGE===////==*/
+
+.blog-content {
+  width:80%;
+  margin:auto;
+  padding:60px 0;
+}
+.blog-left {
+  flex-basis:60%;
+}
+.blog-left img {
+  width:100%;
+}
+.blog-left h2 {
+  color:#222;
+  font-weight:600;
+  margin:30px 0;
+}
+.blog-left p {
+  color:#999;
+}
+.blog-right {
+  flex-basis:32%;
+}
+.blog-right h3 {
+  background:#f44336;
+  color:#fff;
+  padding:7px 0;
+  margin-bottom:20px;
+  font-size:16px;
+  text-align:center;
+}
+.blog-right div {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  color:#555;
+  padding:8px;
+  box-sizing:border-box;
+}
+.comment-box {
+  border:1px solid #ccc;
+  margin:50px 0;
+  padding:10px 20px;
+}
+.comment-box h3 {
+  text-align:left;
+}
+.comment-form input,.comment-form textarea {
+  width:100%;
+  border:none;
+  padding:10px;
+  margin:15px 0;
+  outline:none;
+  background:#f0f0f0;
+}
+.comment-form button {
+  margin:10px 0;
+  border-radius:4px;
+}
+/*==//==CONTACT.HTML PAGE===///==*/
+
+.location {
+  width:80%;
+  margin:auto;
+  padding:80px 0;
+}
+.location iframe {
+  width:100%;
+}
+.contact-us {
+  margin:auto;
+  width:80%;
+}
+.contact-col {
+  flex-basis:48%;
+  margin-bottom:48px;
+}
+.contact-col div {
+  display:flex;
+  margin-bottom:40px;
+  align-items:center;
+}
+.contact-col div .fa {
+  font-size:28px;
+  color:#f44336;
+  margin:10px;
+  margin-right:30px;
+}
+.contact-col div p {
+  padding:0;
+}
+.contact-col div h5 {
+  font-size:20px;
+  margin-bottom:5px;
+  font-weight:400;
+  color:#555;
+}
+.contact-form input,.contact-form textarea {
+  width:100%;
+  padding:15px;
+  margin-bottom:17px;
+  outline:none;
+  border:1px solid #ccc;
+  box-sizing:border-box;
+}
+/* ---------------------------------HERE IS MEDIA QUERY OF ALL THE TAGS---------------------------------  */
+@media(max-width:766px) {
+  /* ----------------&-ABOUT NAV BAR---------------------  */
+  .size-small {
+  font-size:30px;
+}
+.text-box h1 {
+  font-size:20px;
+}
+.text-box p {
+  margin:10px 19px 32px;
+}
+.nav-links ul li {
+  display:block;
+  padding-top:1pc;
+  margin:0;
+}
+.nav-links ul li a {
+  margin:0;
+  padding:0;
+}
+.nav-links ul li a:hover {
+  color:black;
+  cursor:pointer;
+  background:rgba(0,0,0,0.096);
+}
+
+nav .fa {
+  display:block;
+  color:#fff;
+  font-size:22px;
+  margin:10px;
+  cursor:pointer;
+}
+.custom {
+  position:static;
+}
+.custom large {
+  font-size:30px;
+}
+nav {
+  position:fixed;
+}
+
+.nav-links {
+  /* Add your styles for the initial state */
+  position: fixed;
+  top: 0;
+  right: -210px;
+  height: 100vh;
+  width: 200px;
+  background: #f44336;
+  text-align: left;
+  z-index: 2;
+  transition: right 1s; /* Add transition property for smooth animation */
+}
+
+/* Style for the 'show' class to bring the element into view */
+.nav-links.show {
+  right: 0;
+}
+
+/* Style for the 'hide' class to move the element out of view */
+.nav-links.hide {
+  right: -210px;
+}
+
+/* --------------&---ABOUT SECTION 1 COURSE---------------------  */
+  .row {
+  flex-direction:column;
+}
+/* -------------&----ABOUT SECTION 3 facilities/h1---------------------  */
+  .facilities h1 {
+  font-size:34px;
+}
+.facilities p {
+  font-size:12px;
+  margin-bottom:35px;
+}
+/* -------------&------ABOUT SECTION 4 (ABOUT STUDENT REVIEWS)---------------------  */
+
+  .reviews-col img {
+  margin-left:0;
+  margin-right:15px;
+}
+/* -------------&------ABOUT SECTION 5 (ABOUT CALL FOR ACTION)---------------------  */
+  .cta h1 {
+  font-size:14px
+}
+/* -------------&------FOOTER SECTION LAST (ABOUT FOOTER)---------------------  */
+  footer {
+  font-size:small;
+}
+.copyright {
+  font-size:small;
+}
+/* ------------&------BLOG.HTML PAGE--------------------------- */
+  .sub-header h1 {
+  font-size:24px;
+}
+}
